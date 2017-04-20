@@ -14,7 +14,7 @@ There is at least 1 unit test per component and reducer action.
 
 Live page
 ---------
-eminent-route.surge.sh
+https://eminent-route.surge.sh
 
 
 -----------------------------------------------------------------------
