@@ -7,11 +7,11 @@ export default function AppReducer(state, action) {
 // markdown reducer
             markdownPreview: '',
             markdownNotes: '',
-            showConfirmationMessage: false
-        };
+            showConfirmationMessage: false,
 
 // quiz reducer
             answers: [null, null, null, null, null, null, null, null, null, null]
+        };
     }
 
     switch (action.type) {
@@ -99,7 +99,7 @@ export default function AppReducer(state, action) {
                     "Answers": JSON.stringify(state.answers)
                 }),
                 success: function (data, status, xhr) {
-                    console.log(store.dispatch('something'));
+                    store.dispatch({ type: "RESET_EVERYTHING" });
                 },
                 error: function(data, status, xhr) {
                     console.log('error', data);
@@ -111,7 +111,7 @@ export default function AppReducer(state, action) {
             var newState = {
                 answers: [null, null, null, null, null, null, null, null, null, null]
             };
-            return newState;
+            return Object.assign({}, state, newState);
 
         default:
             return state;
