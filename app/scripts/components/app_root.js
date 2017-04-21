@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { Route, Link, NavLink } from "react-router-dom";
 
 //files
-import container from '../containers/all.js'
+import container from './../containers/all.js'
 
 //components
 import MarkdownComponents from './editor_components/markdown_components.js'

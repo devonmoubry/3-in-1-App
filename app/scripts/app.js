@@ -7,8 +7,14 @@ import { Provider } from "react-redux";
 import AppRoot from "./components/app_root.js";
 import About from "./components/about.js";
 import Contact from "./components/contact.js";
+// markdown components
 import EditorComponents from "./components/editor_components/markdown_components.js";
 import MarkdownComponents from './components/editor_components/markdown_components.js'
+// quiz components
+import Start from './components/quiz_components/start.js'
+import Results from './components/quiz_components/results.js'
+import Question from './components/quiz_components/question.js'
+import QuizComponents from './components/quiz_components/quiz_app_root.js'
 
 const NavBar = () => {
   return (
@@ -31,9 +37,14 @@ export default function app() {
         <div>
           <NavBar />
           <Route exact path="/" component={AppRoot} />
-          {/*<Route exact path="/game" component={JeopardyComponents} />
-          <Route exact path="/quiz" component={QuizComponents} />*/}
+          {/*<Route exact path="/game" component={JeopardyComponents} />*/}
+          <Route exact path="/quiz" component={QuizComponents} />
           <Route exact path="/editor" component={EditorComponents} />
+
+{/* quiz routes*/}
+          <Route path="/start"    component={Start} />
+          <Route path="/question/:id" component={Question} />
+          <Route path="/results"  component={Results} />
         </div>
       </Router>
     </Provider>,
