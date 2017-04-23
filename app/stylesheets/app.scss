@@ -199,9 +199,71 @@ html {
       }
 
 // quiz styles
-      main.quiz-main {
-        
-      }
+      main.quiz-main, .quiz-div {
+
+          display: flex;
+          justify-content: center;
+          font-size: 36px;
+          color: #fafafa;
+          font-family: 'Pompiere', cursive;
+          margin: auto;
+          padding: auto;
+          background: rgba(34,113,209,1);
+          background: -moz-linear-gradient(left, rgba(34,113,209,1) 0%, rgba(34,113,209,1) 21%, rgba(37,164,220,1) 80%, rgba(38,181,224,1) 100%);
+          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(34,113,209,1)), color-stop(21%, rgba(34,113,209,1)), color-stop(80%, rgba(37,164,220,1)), color-stop(100%, rgba(38,181,224,1)));
+          background: -webkit-linear-gradient(left, rgba(34,113,209,1) 0%, rgba(34,113,209,1) 21%, rgba(37,164,220,1) 80%, rgba(38,181,224,1) 100%);
+          background: -o-linear-gradient(left, rgba(34,113,209,1) 0%, rgba(34,113,209,1) 21%, rgba(37,164,220,1) 80%, rgba(38,181,224,1) 100%);
+          background: -ms-linear-gradient(left, rgba(34,113,209,1) 0%, rgba(34,113,209,1) 21%, rgba(37,164,220,1) 80%, rgba(38,181,224,1) 100%);
+          background: linear-gradient(to right, rgba(34,113,209,1) 0%, rgba(34,113,209,1) 21%, rgba(37,164,220,1) 80%, rgba(38,181,224,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2271d1', endColorstr='#26b5e0', GradientType=1 );
+
+          h1 {
+              font-family: 'Amatic SC', cursive;
+              font-size: 108px;
+          }
+          nav {
+              display: flex;
+              font-size: 24px;
+              justify-content: space-between;
+          }
+          a, button {
+              font-family: 'Amatic SC', cursive;
+              text-decoration: none;
+              color: #fafafa;
+              padding: 2px;
+              border: 1px solid #fafafa;
+              border-radius: 6px;
+              background-color: rgba(34,113,209,1);
+          }
+          input {
+              margin: 4px;
+          }
+          .left {
+              justify-content: flex-start;
+          }
+
+          .right {
+              justify-content: flex-end;
+          }
+          table {
+              color: #fafafa;
+              tbody {
+                  font-size: 18px;
+                  text-align: left;
+              }
+              td {
+                  border: 1px solid #fafafa;
+                  padding: 6px;
+              }
+          }
+          .active {
+              font-weight: bold;
+          }
+
+          .red {
+              background-color: red;
+          }
+      } // close main.quiz-main
 
     } //close body
 } //close html
