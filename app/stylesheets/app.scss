@@ -1,6 +1,6 @@
 html {
-    background: #fafafa;
-    margin: 2px;
+    //background: #fafafa;
+    //margin: 2px;
 
     .navigation-container{
       font-family: 'Catamaran', sans-serif;
@@ -206,7 +206,7 @@ html {
           font-size: 36px;
           color: #fafafa;
           font-family: 'Pompiere', cursive;
-          margin: auto;
+          margin: 0 auto;
           padding: auto;
           background: rgba(34,113,209,1);
           background: -moz-linear-gradient(left, rgba(34,113,209,1) 0%, rgba(34,113,209,1) 21%, rgba(37,164,220,1) 80%, rgba(38,181,224,1) 100%);
@@ -220,6 +220,10 @@ html {
           h1 {
               font-family: 'Amatic SC', cursive;
               font-size: 108px;
+              margin: 0 auto;
+          }
+          p {
+              margin: 6px auto;
           }
           nav {
               display: flex;

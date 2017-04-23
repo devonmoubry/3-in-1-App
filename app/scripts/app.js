@@ -38,7 +38,7 @@ export default function app() {
           <NavBar />
           <Route exact path="/" component={AppRoot} />
           <Route exact path="/game" component={JeopardyComponents} />
-          <Route exact path="/quiz" component={QuizComponents} />
+          <Route path="/quiz" component={QuizComponents} />
           <Route exact path="/editor" component={EditorComponents} />
 
 {/* quiz routes*/}
