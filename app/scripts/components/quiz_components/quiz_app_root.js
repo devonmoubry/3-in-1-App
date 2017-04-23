@@ -7,15 +7,15 @@ import questions from './questions.js'
 const NavBar = () => {
 
   const questionsLinks = questions.map(function(question) {
-    return (<NavLink key={question.id} to={`/question/${question.id}`}  >Question {question.id}</NavLink>);
+    return (<NavLink key={question.id} to={`/quiz/question/${question.id}`}  >Question {question.id}</NavLink>);
   })
 
   return (
     <nav>
-      <NavLink to="/start">Start</NavLink>
+      <NavLink to="/quiz/start">Start</NavLink>
       <br />
       { questionsLinks }
-      <NavLink to="/results">Results</NavLink>
+      <NavLink to="/quiz/results">Results</NavLink>
     </nav>
   )
 }

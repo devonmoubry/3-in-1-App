@@ -9,7 +9,7 @@ class Start extends React.Component {
           <p>Please answer these 10 questions.</p>
           <p>You can view the Results page to check on your progress.</p>
           <p>Click submit on the Results page when you are finished.</p>
-          <Link to="/question/1">Let’s Begin!</Link>
+          <Link to="/quiz/question/1">Let’s Begin!</Link>
       </main>
     );
   }

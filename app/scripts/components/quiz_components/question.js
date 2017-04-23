@@ -19,11 +19,11 @@ class Question extends React.Component {
   render (data) {
     const questionId = parseInt(this.props.match.params.id);
     const question = questions[questionId - 1];
-    let leftButton = <Link className="left" to={`/question/${question.id - 1}`}>Previous Question</Link>;
-    let rightButton = <Link className="right" onClick={this.handleQuestion} to={`/question/${question.id + 1}`}>Next Question</Link>;
+    let leftButton = <Link className="left" to={`/quiz/question/${question.id - 1}`}>Previous Question</Link>;
+    let rightButton = <Link className="right" onClick={this.handleQuestion} to={`/quiz/question/${question.id + 1}`}>Next Question</Link>;
 
     if (questionId === 10) {
-      rightButton = <Link className="right" onClick={this.handleQuestion} to="/results">Results</Link>
+      rightButton = <Link className="right" onClick={this.handleQuestion} to="/quiz/results">Results</Link>
     }
 
     if (questionId === 1) {
