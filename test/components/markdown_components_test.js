@@ -9,34 +9,34 @@ import MarkdownComponents from "../../app/scripts/components/editor_components/m
 // http://www.wsbrunson.com/react/redux/test/2016/05/08/testing-redux-containers.html
 
 const createFakeStore = (state) => {
-	return {
-		default: () => {},
-		subscribe: () => {},
-		dispatch: () => {},
-		getState: () => {
-			return Object.assign({}, state);
-		}
-	};
+  return {
+    default: () => {},
+    subscribe: () => {},
+    dispatch: () => {},
+    getState: () => {
+      return Object.assign({}, state);
+    }
+  };
 };
 
 describe("Markdown Components", () => {
-	const store = createFakeStore({
-		markdownPreview: 'Haha',
-		markdownNotes: '',
-		showConfirmationMessage: false
-	});
+  const store = createFakeStore({
+    markdownPreview: 'Haha',
+    markdownNotes: '',
+    showConfirmationMessage: false
+  });
 
-	let Component;
+  let Component;
 
-	beforeEach(() => {
-		Component = render(<Provider store={store}><MarkdownComponents /></Provider>);
-	});
+  beforeEach(() => {
+    Component = render(<Provider store={store}><MarkdownComponents /></Provider>);
+  });
 
   it("should have a title", () => {
     expect(Component.text()).toContain("Moleskin");
   });
 
-	it("should populate preview", () => {
-		expect(Component.find('.textarea').text()).toContain("Haha");
-	});
+  it("should populate preview", () => {
+    expect(Component.find('.textarea').text()).toContain("Haha");
+  });
 });
