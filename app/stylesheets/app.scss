@@ -258,6 +258,23 @@
     flex-wrap: wrap;
   }
 
+  .quiz-question {
+    h1 {
+      align-self: center;
+    }
+    p {
+      align-self: center;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quiz-question, .quiz-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0;
+  }
+
   h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 108px;
