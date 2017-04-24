@@ -6,8 +6,6 @@ import { Route, Link, NavLink } from "react-router-dom";
 //files
 import container from './../containers/all.js'
 
-//components
-import MarkdownComponents from './editor_components/markdown_components.js'
 
 
 class AppRoot extends React.Component {
@@ -18,7 +16,9 @@ class AppRoot extends React.Component {
   render() {
     return (
       <main>
-          <section />
+          <h1>WELCOME!</h1>
+          <h2>Here is a 3-in-1 App including: a Jeopardy Clone, a Movie Trivia Quiz, and a Markdown Preview Notetaker.</h2>
+          <h1>Enjoy!</h1>
       </main>
     );
   }
