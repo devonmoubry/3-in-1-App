@@ -11,7 +11,7 @@ const NavBar = () => {
   })
 
   return (
-    <nav>
+    <nav className="quiz-nav">
       <NavLink to="/quiz/start">Start</NavLink>
       <br />
       { questionsLinks }
@@ -27,7 +27,7 @@ class QuizComponents extends React.Component {
 
   render () {
     return (
-      <main className="quiz-main">
+      <main className="quiz-container">
         <NavBar/>
         <section>
         </section>

@@ -15,7 +15,7 @@ class AppRoot extends React.Component {
 
   render() {
     return (
-      <main>
+      <main className="welcome-container">
           <h1>WELCOME!</h1>
           <h2>Here is a 3-in-1 App including: a Jeopardy Clone, a Movie Trivia Quiz, and a Markdown Preview Notetaker.</h2>
           <h1>Enjoy!</h1>

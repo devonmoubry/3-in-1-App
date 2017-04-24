@@ -36,7 +36,7 @@ class Results extends React.Component {
 
   render () {
     return (
-      <main>
+      <main className="quiz-container">
           <h1>Results</h1>
           <table>
             <thead>

@@ -31,14 +31,18 @@ class Question extends React.Component {
     }
 
     return (
-      <main className="question-main">
-          <h1 className="quiz-question">Question {question.id}</h1>
+      <main className="quiz-container">
+          <div className="quiz-question">
+          <h1>Question {question.id}</h1>
           <p>
           {question.question}
           </p>
+          </div>
+          <div className="quiz-navigation">
           {leftButton}
           <input ref="answer" type="text" />
           {rightButton}
+          </div>
       </main>
     );
   }

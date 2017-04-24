@@ -42,7 +42,7 @@ export default function app() {
           <Route exact path="/editor" component={EditorComponents} />
 
 {/* quiz routes*/}
-          <div className="quiz-div">
+          <div className="quiz-container">
               <Route path="/quiz/start"    component={Start} />
               <Route path="/quiz/question/:id" component={Question} />
               <Route path="/quiz/results"  component={Results} />
